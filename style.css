@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #003049;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #003049;
+}
+
+nav a:hover {
+    color: #155657;
+}
+
+/* HERO */
+.hero {
+    background: url('Download\ Businessman\ &\ futuristic\ 3d\ render\ model….jpg') center/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 55px;
+}
+
+.hero h1 span {
+    color: #0a9396;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 5%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #0a9396;
+}
+
+/* SERVICES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* PROPERTIES */
+.property-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 3fr ;
+    gap: 1em;
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card h3 {
+    padding: 15px;
+}
+
+/* CEO */
+.ceo-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(11, 112, 146);
+}
+
+.ceo-content img {
+    width: 420px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background: #003049;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.contact-p{
+  font-size: 30px;
+  text-align: center;
+
+}
+.contact-info p{
+  font-size: 20px;
+  color: #0a9396;
+}
+.contact-info p a{
+  font-size: 20px;
+  color: #0a9396;
+}
+.under{
+   text-align: center;
+    color: #0a9396;
+    margin-bottom: 330px;
+
+}
+
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .ceo-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 612px) {
+  header{
+    font-size: 10px;
+  }
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 55vh;
+    }.ceo-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1em;
+    color: rgb(11, 112, 146);
+}
+.ceo-content img {
+   width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact-p{
+  font-size: 1rem;
+  text-align: center;
+
+}
+.contact-info p{
+  font-size: 1rem;
+  color: #0a9396;
+}
+.contact-info p a{
+  font-size: 1em;
+  color: #0a9396;
+}header {
+   font-size: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50
+}
+nav a{
+ font-size: 10px;   
+}
+
+
+.hero-content h1{
+    font-size: 20px;
+}
+.hero-content p{
+    font-size: 10px;
+}
+.hero-content a{
+    font-size: 11px;
+}
+.services h2{
+    font-size: 25px;
+}
+.card{
+    font-size: 12px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.properties h2{
+    font-size: 25px;
+}
+.property-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.property-card {
+    display: grid;
+    grid-template-columns: 3fr ;
+    gap: 1em;
+}
+.ceo h2{
+    font-size: 30px;
+}
+.ceo img{
+    width: 160px;
+    height: 140px;
+}
+.contact h2{
+    font-size: 27px;
+}
+@media (max-width: 383px ) {
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+footer {
+    background: #003049;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.ceo-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1em;
+    color: rgb(11, 112, 146);
+}
+.ceo-content img {
+   width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact-p{
+  font-size: 1rem;
+  text-align: center;
+
+}
+.contact-info p{
+  font-size: 1rem;
+  color: #0a9396;
+}
+.contact-info p a{
+  font-size: 1em;
+  color: #0a9396;
+}
+header {
+   font-size: 1rem;
+}
+.hero{
+    background: url('Download\ Businessman\ &\ futuristic\ 3d\ render\ model….jpg') center/cover no-repeat;
+    height: 15pc;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+    position: relative;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav a{
+ font-size: 8px;   
+}
+
+
+.hero-content h1{
+    font-size: 20px;
+}
+.hero-content p{
+    font-size: 10px;
+}
+.hero-content a{
+    font-size: 11px;
+}
+.services h2{
+    font-size: 25px;
+}
+.card{
+    font-size: 12px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.properties h2{
+    font-size: 25px;
+}
+.property-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.property-card {
+    display: grid;
+    grid-template-columns: 3fr ;
+    gap: 1em;
+}
+.ceo h2{
+    font-size: 30px;
+}
+.ceo-content h3 p{
+    font-size: 66px;
+}
+.ceo img{
+    width: 200px;
+    height: 300px;
+}
+.contact h2{
+    font-size: 30px;
+}
+}}
